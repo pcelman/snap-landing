@@ -1,25 +1,127 @@
-:root{
-    --almost-white: hsl(0, 0%, 98%);
-    --medium-gray: hsl(0, 0%, 41%);
-    --almost-black: hsl(0, 0%, 8%);
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Epilogue", sans-serif;
+  font-family: "Epilogue", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__hamb {
+  width: 30px;
+  height: 50%;
+  background-image: url("../images/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: background-image .3s;
+}
+
+.nav__hamb--open {
+  background-image: url("../images/icon-close-menu.svg");
+}
+.nav__overlay {
+  background-color: #000000a7;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s opacity;
+}
+
+.nav__overlay--show {
+    opacity: 1;
+    pointer-events: unset;
 }
 
 .nav__menu {
-    width: 30px;
-    height: 50px;
-    background-image: url("../images/icon-menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    background-color: red;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  right: 0;
+  width: 65%;
+  max-width: 400px;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  padding: 70px 0;
+}
+
+.nav__item {
+  width: 80%;
+  /* background-color: black; */
+  margin: 0 auto;
+  color: var(--almost-black);
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+.nav__item:has(.nav__parent) {
+    padding: 0;
+}
+
+.nav__inner {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    overflow: hidden;
+    height: 0;
+    transition: height .4s;
+}
+
+.nav__parent {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 1.3rem;
+  padding: 20px 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--almost-black);
+}
+
+.nav__login {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav__login--border {
+    margin-top: 20px;
+    border-radius: 1rem;
+    border: 1px solid var(--medium-gray);
+}
+.nav__signin {
+    display: inline-block;
+    color: var(--medium-gray);
+    padding: .7em 0;
+    text-decoration: none;
 }
