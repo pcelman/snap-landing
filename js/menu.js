@@ -25,6 +25,7 @@ navOverlay.addEventListener("click", (e) => {
 
       subMenu.style.height = `${height}px`;
     } else {
+      // to make sure only one element has the active class:
       if (!isActive(subMenu, "nav__inner--show")) {
         closeDropdown(currentDropdown);
       }
@@ -45,6 +46,7 @@ function closeDropdown(currentDropdown) {
   }
 }
 
+// will close the menu is it´s open when resizing 
 window.addEventListener("resize", () => {
   closeDropdown(currentDropdown);
 
