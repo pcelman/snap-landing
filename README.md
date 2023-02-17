@@ -16,8 +16,19 @@ JavaScript
 Installation
 To run the project locally, follow these steps:
 
+## Getting Started
+
+To use this code in your own project, simply copy the files into your project directory.
 
 ## Usage
 The website features a navigation bar with multiple dropdown menus. To open a dropdown menu, click on its corresponding button. To close a dropdown menu, click on its button again or click anywhere outside the menu.
 
 The dropdown menus are designed to be responsive, which means that they will adjust their layout and behavior based on the size of the screen. On larger screens, the menus will be displayed horizontally across the navigation bar. On smaller screens, the menus will be displayed vertically and can be accessed using a hamburger menu icon.
+
+## Contributing
+
+If you find any issues with this code or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This code is released under the MIT License. See the `LICENSE` file for more information.
