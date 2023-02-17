@@ -7,7 +7,7 @@
 
 This project is a website that features dropdown menus that can be opened and closed using JavaScript. The menus are designed to work on a range of screen sizes, from desktop to mobile.
 
-Technologies Used
+## Technologies Used
 The project was built using the following technologies:
 
 HTML
@@ -16,10 +16,8 @@ JavaScript
 Installation
 To run the project locally, follow these steps:
 
-Clone the repository to your local machine.
-Open the project directory in your code editor of choice.
-Open the index.html file in your web browser.
-Usage
+
+## Usage
 The website features a navigation bar with multiple dropdown menus. To open a dropdown menu, click on its corresponding button. To close a dropdown menu, click on its button again or click anywhere outside the menu.
 
 The dropdown menus are designed to be responsive, which means that they will adjust their layout and behavior based on the size of the screen. On larger screens, the menus will be displayed horizontally across the navigation bar. On smaller screens, the menus will be displayed vertically and can be accessed using a hamburger menu icon.
