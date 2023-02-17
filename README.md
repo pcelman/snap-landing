@@ -1,4 +1,5 @@
-# Frontend Mentor Challenge - SNAP LANDING
+# SNAP LANDING
+Frontend Mentor Challenge
 
 [visit the webpage](https://snap-pcv.vercel.app/)
 
